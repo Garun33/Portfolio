@@ -1,0 +1,205 @@
+
+// TYPOGRAPHY =======================================
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+body {
+    .body-font();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #252525;
+    font-family: @fontfamily;
+    font-weight: 300;
+    font-variant-ligatures: common-ligatures;    
+}
+
+p {
+    margin: 0 0 0.1em;
+    font-family: @fontfamily;
+    font-size: 14px;
+    line-height: 22px;  
+    &.head {
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        + h3{
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 1.1em;
+            margin-bottom: 40px;
+            + .subhead{
+                 max-width: 800px;
+                 margin:0 auto;
+                 margin-top: -25px;
+                 margin-bottom: 40px;
+                 color: @subtext-color;
+            }
+        }
+    }
+    &.subhead{
+        color: @subtext-color;      
+    }
+}
+
+p.head+.btn,p.head+.btn+.btn{
+    margin-top: 1em;
+    margin-right:1em;
+}
+p +.btn, p +.btn +.btn {
+    margin-top: 1em;
+    margin-right:1em;
+}
+h1,
+.h1 {
+    font-size: 42px;
+    line-height: 1em;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+}
+
+h2,
+.h2 {    
+    font-size: 27px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+h3,
+.h3 {
+    font-size: 20px;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+    font-weight:700;
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 15px 0px;
+}
+
+h5,
+.h5 {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+}
+h6,
+.h6 {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.highlight {
+    h1 {
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+        text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);
+    }
+    p {
+        &.head {
+            font-weight: 400;
+            line-height: 25px;
+            text-transform: none;
+        }
+    }
+}
+.home-right_container, .contact-right_container{
+    p{
+        font-size: 19px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+}
+.contact-right_container{
+    h3{
+        font-size: 23px;
+        font-weight: 900;
+    }
+}
+.skills-right_container{
+    h2{
+        font-size: 29px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    p{
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: 400;
+        margin-bottom:60px;
+    }
+}
+@media all and (max-width: 768px) {
+    .highlight {
+        h1,
+        .h1 {
+            font-size: 52px;
+            line-height: 52px;
+        }
+    }
+}
+
+
+/* Text size of icons================================*/
+
+.ico-lg {
+    font-size: 4.5em;
+}
+
+.ico-md {
+    font-size: 3em;
+}
+.ico-sm {
+    font-size: 2em;
+}
+.ico-xs {
+    font-size: 1.2em;
+}
+/*NEW Text===================================*/
+.section-title h2, .section-title .title {
+    font-size: 60px;
+    line-height: 70px;
+
+}
+.section-title h2, .section-title .title {
+    color: #19191b;
+    font-family: "CircularStd", sans-serif;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    font-size: 58px;
+    line-height: 60px;
+    margin-bottom: 15px;
+}
+.section-title p {
+    color: #696871;
+    font-family: "CircularStd", sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: -0.66px;
+    line-height: 39px;
+}

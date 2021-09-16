@@ -1,0 +1,117 @@
+//FORM ELEMENTS======================
+
+input[type],
+textarea,
+select {
+    width: 100%;
+    min-height: 40px;
+    padding: 30px 1em;   
+    color: #000;
+    font-family:@fontfamily;
+	font-size: 18px;
+	font-weight:500;
+    line-height: 26px;
+    font-style:italic;
+    -webkit-appearance: none;
+    &:focus, &:active{
+        outline: none;
+    }
+}
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder { /* Firefox 18- */
+  font-style:italic;
+}
+
+.form-control{
+    border-radius:0px;
+     padding: 30px 1em;
+  }
+  textarea{
+    height:290px !important;
+    margin-bottom:55px;
+    font-size: 22px;
+    line-height: 26px;
+    font-style:italic;
+  }
+
+form>div[class*='col-']:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+form>div[class*='col-'] button {
+    width: 100%;
+    padding: 12px 12px;
+}
+@media all and (min-width: 800px){
+	.form-group{
+		margin-bottom: 20px;
+		&.form-group-half{
+			width:48.8%;
+			display:inline-block;
+			&:first-child{
+				margin-right:1%;
+			}
+		}
+	}
+}
+.form-group{
+	position: relative;
+    margin-bottom: 20px;
+	&.form-group-half{
+	}
+	label.error{
+		color: #ff4d57;
+	    position: absolute;
+	    bottom: -25px;
+	    right: 0;
+	    font-size: 11px;
+	    text-transform: lowercase;
+	}
+	&.form-group-lg{
+		input[type],
+		textarea,
+		select {
+			width: 100%;
+			min-height: 40px;
+			padding: 0.8em 1em;
+			border:none;
+      		border-bottom: 1px solid #f2f2f2;
+			border-radius: 0px;
+			background: transparent;
+			color: #252525;
+			line-height: 26px;
+			-webkit-appearance: none;
+			&:focus, &:active{
+				outline: none;
+			}
+		}
+		textarea{
+			resize: none;
+			min-height:60px;
+		}
+	}
+}
+.alert{
+	margin-top: 20px;
+	margin-bottom: 0rem;
+    padding: 0.5rem;
+    border-radius: 0;
+    font-size: 12px;
+	&.hidden{
+		display: none;
+	}
+}
+.form-floating{
+	>.form-control{
+    	padding: 2.6rem .75rem
+	}
+	>.label{
+		padding: 1.6rem .75rem;
+	}
+}
+.form-floating>.form-control, .form-floating>.form-select {
+    height: calc(3.3rem + 2px);
+    line-height: 1.25;
+}

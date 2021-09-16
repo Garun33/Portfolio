@@ -1,0 +1,236 @@
+// BUTTONS =======================================
+
+.btn {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    .body-font;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin:50px 0 35px;
+    &.btn-special{
+        border-bottom-right-radius: 0;
+    }
+}
+.btn-bar{
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  >.btn {
+      display: inline-block;
+      margin:0px 5px;
+      border-color: @theme-secondary;
+      border: 1px solid;
+      background-color: transparent;
+      color: @theme-secondary;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          border-color: darken(@theme-secondary, 5%);
+          background-color: transparent;
+          color: darken(@theme-secondary, 5%);
+          border: 1px solid;
+      }
+      &:focus{
+        box-shadow:0 0 0 0rem fade(@theme-secondary, 25%);
+      }
+      &.mixitup-control-active{
+        background-color: @theme-secondary;
+        color:#fff;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            border-color: darken(@theme-secondary, 0%);
+            color: #fff;
+            border: 1px solid;
+        }
+      }
+  }
+}
+.btn-xl {
+    padding: 22px 40px;
+}
+.btn-lg {
+    padding: 15px 30px;
+}
+.btn-md {
+    padding: 12px 30px;
+}
+
+.btn-sm {
+    padding: 8px 15px;
+}
+
+.btn-primary {
+    border: none;
+    background: @theme-primary;
+    color: #000;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background: darken(@theme-primary, 5%);
+        color: #000;
+    }
+    &:focus{
+      box-shadow:0 0 0 0.2rem fade(@theme-primary, 25%);
+    }
+    &.inverse{
+        background: #fff;
+        color: @theme-primary;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background: #fff;
+            color: darken(@theme-primary, 5%);
+        }
+    }
+}
+.btn-secondary {
+    border: none;
+    background: @theme-secondary;
+    color: #fff;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background: darken(@theme-secondary, 5%);
+        color: #fff;
+    }
+    &:focus{
+      box-shadow:0 0 0 0.2rem fade(@theme-secondary, 25%);
+    }
+    &.inverse{
+        background: #fff;
+        color: @theme-secondary;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background: #fff;
+            color: darken(@theme-secondary, 5%);
+        }
+    }
+}
+.btn-outline {
+    border-color: @light-gray;
+    border: 1px solid;
+    color: @light-gray;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        border-color: darken(@light-gray, 5%);
+        color: darken(@light-gray, 5%);
+        border: 1px solid;
+    }
+    &:focus{
+      box-shadow:0 0 0 0.2rem fade(@light-gray, 25%);
+    }
+    &.inverse{
+        color: #fff;
+        border-color: #fff;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            border-color: darken(#fff, 5%);
+        }
+        &:focus{
+          box-shadow:0 0 0 0.2rem fade(#fff, 25%);
+        }
+    }
+}
+
+.btn-gradient {
+    border: none;
+    background: @theme-primary;
+    /* Old browsers */
+    background: -moz-linear-gradient(79deg, @theme-primary 29%, @theme-tertiary 123%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(79deg, @theme-primary 29%, @theme-tertiary 123%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(79deg, @theme-primary 29%, @theme-tertiary 123%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@theme-primary, endColorstr=@theme-tertiary, GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background: darken(@theme-primary, 15%);
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, darken(@theme-primary, 5%) 1%, darken(@theme-tertiary, 5%) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, darken(@theme-primary, 5%) 1%, darken(@theme-tertiary, 5%) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, darken(@theme-primary, 5%) 1%, darken(@theme-tertiary, 5%) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=darken(@theme-tertiary, 5%), endColorstr=darken(@theme-secondary, 5%), GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        color: #fff;
+    }
+}
+.bg-gradient,.bg-gradient2  {
+    .col-sm-10 {
+        z-index: 2;
+    }
+    .btn-primary {
+        background: white;
+        border-color: white;
+        color: @theme-primary;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background-color: white;
+            border-color: white;
+            color: @theme-primary;
+        }
+    }
+    .btn-outline {
+        border-color: white;
+        color: white;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            border-color: fade(white , 50%);
+            color: fade(white , 50%);
+        }
+    }
+}
+.btn-full{
+    width: 100%;
+    border-radius: 0;
+}
+.btn-icon{
+    cursor: pointer;
+    padding: 10px 21px;
+    i{
+        float: left;
+        margin-right: 8px;
+        font-size: 24px;
+        color: #fff;
+        vertical-align: middle;
+        &:before{
+            color: #fff;
+        }
+    }
+    p{
+        float: left;
+        margin-bottom: 0;
+        text-align: left;
+        line-height: 16px;
+        span{
+            display: block;
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
+}

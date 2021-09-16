@@ -1,0 +1,179 @@
+// contains all the general classes and styles used across the template
+// xs
+@media (max-width: 575.98px) {  }
+// sm
+@media (max-width: 767.98px) {}
+// md
+@media (max-width: 991.98px) {}
+// lg
+@media (max-width: 1199.98px) {}
+// xl
+@media (min-width: 1199.98px) {}
+/*===========Text Alignment============*/
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+.text-weight-700{
+    font-weight: 700;
+}
+.text-weight-600{
+    font-weight: 600;
+}
+.text-lower {
+    text-transform: lowercase;
+}
+.text-white{
+    color: #fff;
+}
+.text-primary{
+    color: @theme-primary;
+}
+.text-secondary{
+    color: @theme-secondary;
+}
+.text-bold{
+    font-weight:700;
+}
+.text-middle-main {
+    display: table;
+    height: 100%;
+    width: 100%;
+    .text-middle {
+        display: table-cell;
+        padding: 30px 20px;
+        vertical-align: middle;
+    }
+    @media all and (max-width: 576px){
+        display: block;
+        .text-middle{
+            display: block;
+            padding: 40px 20px;
+            h1{
+                font-size: 40px;
+            }
+        }
+    }
+}
+/*========== Margins ==================*/
+.mg-bottom-10{
+    margin-bottom: 10px;
+}
+.mg-bottom-15{
+    margin-bottom: 15px;
+}
+.mg-bottom-20{
+    margin-bottom: 20px;
+}
+.mg-bottom-25{
+    margin-bottom: 25px;
+}
+.mg-bottom-30{
+    margin-bottom: 30px;
+}
+.mg-bottom-35{
+    margin-bottom: 35px;
+}
+.mg-bottom-40{
+    margin-bottom: 40px;
+}
+.mg-bottom-65{
+    margin-bottom: 65px;
+}
+.mg-bottom-100{
+    margin-bottom: 100px;
+}
+.mg-top-40{
+    margin-top: 40px;
+}
+.mg-top-30{
+    margin-top: 30px;
+}
+.mg-top-20{
+    margin-top: 20px;
+}
+.ms-lg-4 {
+    margin-left: 2.1rem!important;
+}
+@media (max-width: 767.98px) {
+    .sm-mg-bottom-10{
+        margin-bottom: 10px;
+    }
+    .sm-mg-bottom-15{
+        margin-bottom: 15px;
+    }
+    .sm-mg-bottom-20{
+        margin-bottom: 20px;
+    }
+    .sm-mg-bottom-25{
+        margin-bottom: 25px;
+    }
+    .sm-mg-bottom-30{
+        margin-bottom: 30px;
+    }
+    .sm-mg-bottom-35{
+        margin-bottom: 35px;
+    }
+}
+@media all and (max-width){
+
+}
+/*========== Padding ========*/
+.pd-0{
+    padding: 0;
+}
+.pd-bt-0{
+    padding-bottom: 0;
+}
+.pd-tp-0{
+    padding-top: 0;
+}
+/*========== Blocks and inline ===========*/
+.display-block{
+    display: block;
+}
+.display-inline{
+    display: inline-block;
+}
+/*========== Width ==================*/
+.max-width-1000{
+    max-width: 1000px;
+}
+.max-width-800{
+    max-width: 800px;
+}
+/*========== Positions ==================*/
+
+.pos-vcenter {
+    position: relative;
+    z-index: 9;
+}
+.pos-relative{
+    position: relative;
+}
+
+/*=======Image =============*/
+.img-fixed{
+    height: 100%;
+    img{
+        max-height: 100%;
+    }
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
