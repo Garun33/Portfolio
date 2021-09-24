@@ -1,4 +1,33 @@
 /*-----------RESPONSIVE----------*/
+@media (max-width: 600px) and (min-width: 320px){
+	.main_container{
+	  padding:40px 15px !important;
+	}
+}
+@media (max-height: 767px) and (min-width: 320px){
+  .left-sidebar .banner-container {
+    margin-bottom: 100px !important;
+    height: 320px !important;
+  }
+}
+@media (max-height: 767px) and (min-width: 800px){
+  .left-sidebar .banner-container {
+    margin-bottom: 100px !important;
+    height: 270px !important;
+  }
+}
+@media all and (max-height: 768px){
+  .left-sidebar .banner-container{
+      margin-bottom: 125px;
+    height: 310px;
+  }
+  .left-sidebar .banner-container .banner-img-block{
+    height: 300px;
+    margin: 80px auto 0;
+    width: 330px;
+    background-size: 100%;
+  }
+}
 @media all and (max-width: 767px) {
   .caseStudy_outer{
     .header{
@@ -7,10 +36,21 @@
       }
     }
   }
+  body:not(.work-page){
+	  .intro,.social-container{
+		display:none;
+	  }
+  }
+  
   .left-sidebar{
     .ga-container{
       height: 480px !important;
     }
+  }
+  .left-sidebar .banner-container {
+    width: ~"calc(100% + 90px)";
+    margin-left: -45px;
+    margin-right: -45px;
   }
   .works-container{
     img{
@@ -19,9 +59,21 @@
   }
 }
 @media (max-width: 1023px) and (min-width: 768px){
+.left-sidebar .banner-container {
+   width: ~"calc(100% + 90px)";
+    margin-left: -45px;
+    margin-right: -45px;
+  }
   .left-sidebar{
     .ga-container{
       height: 610px !important;
+    }
+    .banner-container{
+    height: 380px;
+    .banner-img-block{
+    width: 450px;
+    height: 440px;
+    }
     }
   }
   .works-container{
@@ -31,6 +83,62 @@
   }
 }
 @media all and (max-width: 992px) {
+  .works{
+    padding:30px 30px;
+  }
+  .content-block{
+    margin: 20px 0px;
+    padding: 30px;
+  }
+  .work1{
+		padding-bottom: 0;
+  }
+  .work1 .content-block {
+	margin: 0px -18px 0 -18px;
+    width: ~'calc(100% + 36px)';
+    max-width: ~'calc(100% + 36px)';
+    background-color: #000;
+	h2{
+		font-size: 22px;
+	}
+	p{
+		font-size: 13px;
+		color:#fff;
+	}
+  }
+  .work2{
+	padding-top: 0;
+		padding-bottom: 0;
+  }
+  .work2 .content-block {
+	margin: 0px -18px 0 -18px;
+    width: ~'calc(100% + 36px)';
+    max-width: ~'calc(100% + 36px)';
+    background-color: #000;
+	h2{
+		font-size: 22px;
+	}
+	p{
+	    font-size: 13px;
+		color:#fff;
+	}
+  }
+  .work3{
+		padding-bottom: 0;
+  }
+  .work3 .content-block {
+	margin: 0px -18px 0 -18px;
+    width: ~'calc(100% + 36px)';
+    max-width: ~'calc(100% + 36px)';
+    background-color: #000;
+	h2{
+		font-size: 22px;
+	}
+	p{
+		font-size: 13px;
+		color:#fff;
+	}
+  }
   .home-right_container,.skills-right_container, .contact-right_container, .work-right_container{
     padding: 0;
   }
@@ -58,6 +166,12 @@
   }
 }
 @media all and (max-width: 1023px) {
+  .works{
+    .btn{
+     display: inline-block;
+     border-radius: 5px;
+    }
+  }
   .main_container{
     height:auto;
   }
@@ -67,7 +181,7 @@
   }
   .left-sidebar{
     .fixed-top{
-      top: 11px;
+      top: 0px;
       background-color: transparent;
     }
     .ga-container{
@@ -123,6 +237,9 @@
   }
 }
 @media all and (min-width: 1024px) {
+  .works{
+  height: 360px;
+  }
   .left-sidebar{ 
     position: fixed;
     top: 40px;
@@ -146,6 +263,22 @@
   .left-sidebar{
      width: 460px; 
   }
+  .works {
+    height: 220px;
+    h2{
+      font-size: 20px;
+    }
+    p{
+      font-size: 13px;
+      line-height: 18px;
+    }
+     .btn {    
+      padding: 10px 15px;
+      margin: 16px 0 0;
+      font-size: 12px;
+    }
+
+  }
 }
 
 @media (max-width: 1346px) and (min-width: 1200px){
@@ -167,6 +300,10 @@
 }
 @media all and (max-width: 1024px) {
   .caseStudy_outer{
+    .case-img,
+    .case-img-1000{
+      max-width:100%;
+    }
     .header{
       h1{
         line-height: 120px;

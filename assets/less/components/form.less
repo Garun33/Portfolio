@@ -111,7 +111,12 @@ form>div[class*='col-'] button {
 		padding: 1.6rem .75rem;
 	}
 }
+.form-floating>textarea.form-control{
+	    max-height: 245px;
+		margin-bottom: 30px;
+}
 .form-floating>.form-control, .form-floating>.form-select {
-    height: calc(3.3rem + 2px);
+    height: ~'calc(3.3rem + 2px)';
+	min-height:60px;
     line-height: 1.25;
 }

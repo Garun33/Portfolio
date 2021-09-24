@@ -1,6 +1,6 @@
 
 //GLOBAL COMPONENTS =======================================
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
 
 html,
 body {
@@ -10,7 +10,7 @@ body {
 }
 a {
     color: @theme-primary;
-    .transition-all;
+    transition: none;
     &:hover,
     &:focus {
         color: darken(@theme-primary, 10%);
@@ -101,3 +101,19 @@ body {
     webkit-tap-highlight-color: @gray-darker;
 }
 
+.show-on-desktop{
+	display:none;
+}
+.show-on-mobile{
+	display:none;
+}
+@media all and (min-width:769px){
+	.show-on-desktop{
+		display:block !important;
+	}
+}
+@media all and (max-width:768px){
+	.show-on-mobile{
+		display:block !important;
+	}
+}

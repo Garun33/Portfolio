@@ -3,11 +3,15 @@
 .main_container{
   width: 100%;
   height: 100vh;
-  border:2px solid #000;
+  font-family: 'Raleway', sans-serif !important;
+  //border:2px solid #000;
   padding:40px 35px;
   .container-fluid, .row{
     height: 100%;
   }
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway', sans-serif;
 }
 .auto-container{
   height:auto !important;
@@ -17,6 +21,10 @@
   padding:0px 35px 0px;
   width:100%;
   height:100%;
+  p{
+		font-size:17px;
+		font-family: 'Raleway', sans-serif;
+  }
 }
 .contact-right_container,.work-right_container{
   background-color:#fff;
@@ -48,10 +56,27 @@
     height: 100vh;
    // max-height: 100vh;
 
+.banner-container{
+      width: 100%;
+    background-color: #faeef3;
+    display: inline-block;
+        margin-bottom: 175px;
+    height: 360px;
+  .banner-img-block{
+    background-image:url(../images/me.png);
+    background-repeat:no-repeat;
+    height: 390px;
+    margin: 80px auto 0;
+    width: 427px;
+   // background-color: burlywood;
+  }
+}
+
+
   .ga-container{
     position:relative;
     height:690px;
-    background-image:url(../images/1.png);
+    background-image:url(../images/Frame.png);
     background-size:100%;
     background-repeat:no-repeat;
     margin-bottom:30px;  
@@ -74,8 +99,13 @@
   span{
     color:#de3a54;
   }
+  h1,h4{
+	font-family: 'Lato', sans-serif;
+  }
   h4{
      font-weight: 400;
+     font-size:17px;
+	 
   }
 }
 .social-container{
@@ -84,8 +114,9 @@
     display:inline-block;
   }
   h6{
+	text-decoration:underline;
     a{
-      color:#000;
+      color:#2077e4;
       &:hover{
         color:#f1b6cf;
       }
@@ -117,6 +148,92 @@
 /*>>>>>>>>>>>> HOME page styling >>>>>>>>>>>>>>>>>>>>>>*/
 
 /*>>>>>>>>>>>> WORK page styling >>>>>>>>>>>>>>>>>>>>>>*/
+.works{
+  width: 100%;  
+  background-color: #d5d541;
+  margin-bottom:25px; 
+  padding:0px 30px;
+  font-family:@fontfamily2;
+  img{
+    height: 100%;
+    width: 100%;
+    max-height: 360px;
+  } 
+  .btn{
+    color: #fff;    
+    padding: 12px 25px;
+    margin: 20px 0 0;
+  }
+  h2{
+    margin-bottom:10px;
+    font-family:@fontfamily2;
+    font-weight: 700;
+  }
+  p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:@fontfamily2;
+  }
+  .img-block{
+   // padding-left: 30px;
+  }
+
+  &.work1{
+    background-color:#fff1dd;
+    h2{
+      color:#e59703;      
+    }
+    .btn{
+      background: @yellow;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          background: darken(@yellow, 10%);
+          color: #fff;
+      }
+    }     
+  }
+  &.work2{
+    background-color:#d8f2e2;
+    h2{
+      color:#40a666;      
+    }
+    .btn{
+      background: @green;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          background: darken(@green, 10%);
+          color: #fff;
+      }
+    }     
+  }
+  &.work3{
+    background-color:#cde3f0;
+    h2{
+      color:#1275b1;      
+    }
+    .btn{
+      background: @blue;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          background: darken(@blue, 10%);
+          color: #fff;
+      }
+    }     
+  }
+}
+
+
+
+
+
+
 .works-container{
   display: block;
   position: relative;
@@ -149,6 +266,7 @@
     }
 }
 .hoverBox {
+display:none;
     visibility: hidden;
     width: 100%;
     height: 100%;
@@ -182,8 +300,30 @@
   text-align: center;      
 }
 /*>>>>>>>> CONTACT styling <<<<<<<<<*/  
+	::-webkit-input-placeholder {
+		font-family: 'PT Sans', sans-serif !important;
+	     font-weight: 400;
+		font-style: italic;
+	}
+	:-ms-input-placeholder {
+		font-family: 'PT Sans', sans-serif !important;
+	     font-weight: 400;
+		font-style: italic;
+	}
+	::placeholder {
+		font-family: 'PT Sans', sans-serif !important;
+	     font-weight: 400;
+		font-style: italic;
+	}
+	
 .contact-forms{
+	.form-floating>label{
+		font-family: 'PT Sans', sans-serif !important;
+	     font-weight: 400;
+		font-style: italic;
+	}
   padding:25px 0px 0px; 
+  font-family:@fontfamily3;
   address{
     display: inline-block;
     width: 100%;
@@ -192,6 +332,7 @@
     font-weight: 500;
     line-height: 20px;    
     text-align: right;
+    font-family:@fontfamily2;
     
   }
   label{
@@ -226,8 +367,52 @@
   .banner{
     width:100%;
     height:auto;
-    padding:45px 0px;
+    padding:45px 0px;    
+  }
+  .bannerHOPE{
     background-color:#e7efec;
+  }
+  .bannerUS{
+    background-color: #cde3f0;
+  }
+  .menuHOPE{
+    background-color:#534f46;
+  }
+  .menuUS{
+    background-color:#2e83b0;
+  }
+  .subhead{
+    width:100%;
+    height:200px;
+    background: rgb(56,138,180);
+    background: linear-gradient(90deg, rgba(56,138,180,1) 0%, rgba(83,159,195,1) 35%, rgba(99,172,203,1) 100%);
+    h2{
+      color:#fff;
+      font-size:55px;
+      line-height: 200px;
+    }
+  }
+  ul.listUS{
+    margin:25px 0px;
+    padding:0px 30px;
+      li{
+        list-style: disc;
+        margin: 0px auto;
+        font-size: 18px;
+        font-weight:400;
+        line-height:30px;
+    }
+  }
+  ul.listUS2{
+    margin:25px 0px;
+    padding:0px 30px;
+      li{
+        list-style:decimal;
+        margin: 0px auto;
+        font-size: 18px;
+        font-weight:400;
+        line-height:30px;
+    }
   }
   .bottom-banner{
     width:100%;
@@ -243,7 +428,7 @@
   .menu{
     height:125px;
     width:100%;
-    background-color:#534f46;
+    
     ul{
     margin:0px;
     padding:0px;
@@ -262,17 +447,50 @@
       }
     }
   }
+  ul.description{
+    margin:25px 0px;
+    padding:0 30px;
+    li{
+      list-style:disc;
+      line-height:50px;
+      span{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+      }
+    }
+  }
   .content-container{
     max-width:1030px;
     margin-bottom:65px;
-    
+    span{
+      font-weight: 700;
+    }  
+    span.italic{
+      font-style:italic;
+      font-weight: 500;
+    }  
+  }
+  .case-img{
+    max-width:680px;
+  }
+  .case-img-100{
+    max-width:100%;
+  }
+  .case-img-1000{
+    max-width:1190px;
   }
   p.case{
     font-size:20px;
     line-height:28px;
   }
   h5{
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom:25px;
+  }
+  h6{
+    font-size:22px;
+    margin-bottom:25px;
   }
   ul{
     margin:0px;
